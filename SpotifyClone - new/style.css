@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    /* background-color: red; */
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0 1.5rem;
+}
+
+.home {
+    font-size: 1.3rem;
+    background-color: #1f1f1f;
+    /* background-color: red; */
+    padding: 7px 8px;
+    border: none;
+    border-radius: 50%;
+    color: #b0b0b0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.home:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    height: 2.8rem;
+    width: 27rem;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+
+.searchIcon {
+    font-size: 1.4rem;
+    margin: 0 0.6rem;
+    color: #b0b0b0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.searchBar:hover .searchIcon {
+    color: white;
+    transform: scale(1);
+}
+
+.textBox {
+    width: 80%;
+    height: 50%;
+    padding-right: 10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-right: 2px solid #b0b0b0;
+    outline: none;
+    font-size: 1.05rem;
+}
+
+.browes {
+    margin: 0 1rem;
+    font-size: 1.05rem;
+    color: #b0b0b0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.browes:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0.5rem;
+
+}
+
+.rightHalf {
+    border-right: 2px solid #b0b0b0;
+    margin: 1rem;
+
+}
+
+
+.rightHalf ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 1rem;
+}
+
+.rightHalf li {
+    list-style: none;
+}
+
+.unOrder {
+    color: #b0b0b0;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.unOrder:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.rightHalf2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.loginBtn {
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: rgb(220, 217, 217);
+    transform: scale(1.05);
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.main {
+    height: 77vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.leftMain {
+    width: 28%;
+    height: 100%;
+    background-color: #121212;
+    margin-left: 7px;
+    border-radius: 10px;
+}
+
+.leftMain h1 {
+    font-size: larger;
+    padding: 10px 25px;
+}
+
+.songList {
+    height: 63vh;
+    overflow: auto;
+}
+
+.songList::-webkit-scrollbar {
+    display: none;
+}
+
+.songList ul {
+    padding: 0 22px;
+}
+
+
+.songList ul li {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 30px;
+    border: 2px solid #333;
+    padding: 5px 12px;
+    margin: 12px 0;
+    width: 94%;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+
+
+/* .info div{
+
+} */
+
+.playNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.playNow i {
+    font-size: 24px;
+}
+
+.rightMain {
+    width: 72%;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+
+
+
+.songsPlayList {
+    margin: 1.5rem 0 1rem 2.5rem;
+}
+
+.songs {
+    margin: 1rem 0.5rem 0.3rem 0;
+    
+
+}
+
+.cardImg img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+
+
+.cardImg {
+    width: 10rem;
+    /* background-color: red; */
+    padding: 0.7rem;
+}
+
+.cardImg:hover {
+    background-color: #222;
+}
+
+.playBtn {
+    font-size: 2.5rem;
+    color: rgb(30, 237, 30);
+    background-color: black;
+    width: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 15rem;
+    transform: translate(110px, -40px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cardImg:hover .playBtn {
+    opacity: 1;
+    transform: translate(110px, -50px);
+}
+
+.songName {
+    padding: 0.2rem 0;
+    font-weight: 400;
+}
+
+.songDis {
+    font-size: small;
+    font-weight: 700;
+    color: gray;
+}
+
+.songCard {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.songCard::-webkit-scrollbar {
+    display: none;
+}
+
+
+.playerBar {
+    width: 100%;
+    height: 10vh;
+    margin-top: 0.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* background-color: red; */
+}
+
+.playbarInfo{
+    width: 300px;
+}
+
+
+.playerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.playerBtn i {
+    font-size: 1rem;
+    color: rgb(151, 151, 151);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.playBtn2 i {
+    font-size: 2rem;
+    color: white;
+}
+
+.playBtn2:hover {
+    transform: scale(1.0);
+
+}
+
+.playerBtn i:hover {
+    transform: scale(1.0);
+    color: white;
+}
+
+.playRange{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: smaller;
+    color: rgb(151, 151, 151);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+input[type="range"] {
+    appearance: none;
+    width: 500px;
+    height: 3px;
+    background-color: #333;
+    cursor: pointer;
+    
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 20rem;
+    appearance: none;
+    transition: all 0.2s ease-in-out; 
+}
+
+
+.playerNav img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+}
+
+.playerNav {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 390px;
+}
+
+.playerTittle {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.playerDescription {
+    font-size: small;
+    font-weight: bold;
+    color: gray;
+}
+
+
+@media (min-width: 1280px) {
+    
+}

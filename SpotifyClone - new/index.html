@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <nav>
+        <div class="leftNav">
+            <div class="logo invert"><img src="assets/logo.svg" alt=""></div>
+            <div class="home"><i class="fa-solid fa-house"></i></div>
+            <div class="searchBar">
+                <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="search" class="textBox" placeholder="What do you want to play?">
+                <div class="browes"><i class="fa-solid fa-folder-open"></i></div>
+            </div>
+        </div>
+        <div class="rightNav">
+            <div class="rightHalf">
+                <ul>
+                    <li class="unOrder">Premium</li>
+                    <li class="unOrder">Support</li>
+                    <li class="unOrder">Download</li>
+                </ul>
+            </div>
+            <div class="rightHalf2">
+                <p class="unOrder"><i class="fa-regular fa-circle-down"></i> Install App</p>
+                <p class="unOrder">Signup</p>
+                <button class="loginBtn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="leftMain">
+            <div id="leftdiv">
+                <h1>Your Library</h1>
+            </div>
+            <div class="songList">
+                <ul>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="rightMain">
+            <div class="songsPlayList">
+                <h2>Trending songs</h2>
+                <div class="songs">
+                    <div class="songCard">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- playerNav -->
+    <div class="playerBar">
+        <div class="playerNav">
+            <img src="assets/1.jpg" alt="">
+            <div class="playbar">
+                <div class="playerTittle">Naruto</div>
+                <div class="playerDescription">
+                    <p>Naruto Theme Song</p>
+                </div>
+            </div>
+        </div>
+        <div class="PlayerController">
+            <div class="playerBtn">
+                <div class="shuffle"><i class="fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="fa-solid fa-backward-step"></i></div>
+                <div class="playBtn2" id="playBtn2"><i id="play" class="fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class="fa-solid fa-forward-step"></i></div>
+                <div class="repeat"><i class="fa-solid fa-repeat"></i></div>
+            </div>
+        
+
+
+            <div class="playRange">
+                <div class="songTime">00:00</div>
+                <input type="range" value="0" id="progressBar">
+                <div class="songDuration">00:00</div>
+            </div>
+        </div>
+        <div></div>
+
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
+</body>
+
+</html>
